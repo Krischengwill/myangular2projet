@@ -1,3 +1,4 @@
+<div class="jumbotron text-center">
 <div class="form-container">
   <h2>Login With Your Accounts</h2>
     <span class="error" *ngIf="error">{{ error }}</span>
@@ -6,9 +7,10 @@
   <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"><br>
   <p><button (click)="loginGoogle()" id="google">Login With Google</button></p>
   <img src="http://www.iconsdb.com/icons/preview/caribbean-blue/email-xl.png"><br>
-  <button routerLink="/login-email" id="email">Email</button><br>
+  <button routerLink="/login-email" id="email"><strong>Email</strong></button><br>
  
         
   <a routerLink="/signup" routerLinkActive="active" class="alc"><br>No account? <strong>Create one here</strong></a>
   
+</div>
 </div>

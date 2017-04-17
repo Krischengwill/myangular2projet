@@ -26,6 +26,8 @@ import { DarksoulsComponent } from './components/darksouls/darksouls.component';
 import { DiabloComponent } from './components/diablo/diablo.component';
 import { DeadbydaylightComponent } from './components/deadbydaylight/deadbydaylight.component';
 import { LFGComponent } from './components/lfg/lfg.component';
+import { HttpService } from './components/service/http.service';
+import { AllDataComponent } from './components/alldata/alldata.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyALGX_Ef9e85I1Epx1MLIh0Gta35IBxaWA',
@@ -57,7 +59,9 @@ const appRoutes: Routes = [
   { path: 'darksouls', component: DarksoulsComponent },
   { path: 'diablo' , component: DiabloComponent },
   { path: 'deadbydaylight', component: DeadbydaylightComponent },
-  { path: 'lfg', component: LFGComponent }
+  { path: 'lfg', component: LFGComponent },
+  { path: 'alldata', component: AllDataComponent },
+  { path: '', redirectTo: 'lfg', pathMatch: 'full' }
 
 ]
 
@@ -79,7 +83,8 @@ const appRoutes: Routes = [
     DarksoulsComponent,
     DiabloComponent,
     DeadbydaylightComponent,
-    LFGComponent
+    LFGComponent,
+    AllDataComponent
   ],
   imports: [
     BrowserModule,
@@ -89,7 +94,7 @@ const appRoutes: Routes = [
     AngularFireModule.initializeApp(firebaseConfig, firebaseAuthConfig),
     RouterModule.forRoot(appRoutes)
   ],
-  providers: [FirebaseService,AuthService,AuthGuard],
+  providers: [FirebaseService,AuthService,AuthGuard,HttpService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

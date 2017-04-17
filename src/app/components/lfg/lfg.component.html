@@ -1,3 +1,43 @@
-<p>
-  lfg works!
-</p>
+<div class="offset-md-3 col-6">
+			<h3>Looking For Your Groups</h3>
+			<fieldset>	
+<div class="form-group">
+    <label>Game You Wanna Play</label>
+    <select class="form-control" type="text" [(ngModel)]="game" name="game" required>
+      <option value="Destiny">Destiny</option>
+      <option value="Diablo3">Diablo3</option>
+      <option value="DarkSouls3">DarkSouls3</option>
+      <option value="Deadbydaylight">Deadbydaylight</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Type of Team</label>
+    <select class="form-control" type="text" [(ngModel)]="type" name="type" required>
+      <option value="PVP">PVP</option>
+      <option value="Mission">Mission</option>
+      <option value="Group Mission">Group Mission</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Match or Event</label>
+    <select class="form-control" type="text" [(ngModel)]="match" name="match" required>
+      <option value="Match">Match</option>
+      <option value="Event">Event</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Duration</label>
+    <select class="form-control" type="text" [(ngModel)]="time" name="time" required>
+      <option value="less than 30min">less than 30min</option>
+      <option value="less than 2 hours">less than 2 hours</option>
+      <option value="more than 2 hours">more than 2 hours</option>
+    </select>
+    </div>
+    <div class="form-group">
+    <label>Short Description</label>
+    <input class="form-control" type="text" [(ngModel)]="short" name="short" />
+    </div>
+    
+    <input type="submit" value="submit" class="btn btn-success" (click) = "getFormData()">
+			</fieldset>	
+		</div>

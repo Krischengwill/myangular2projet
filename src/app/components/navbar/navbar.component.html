@@ -14,6 +14,7 @@
         <li *ngIf="!(af.auth | async)"><a [routerLink]="['/']">Home</a></li>
         <li *ngIf="(af.auth | async)"><a [routerLink]="['/gamepage']">GamePage</a></li>
        <li *ngIf="(af.auth | async)"><a [routerLink]="['/lfg']">Looking for Group</a></li>
+       <li *ngIf="(af.auth | async)"><a [routerLink]="['/alldata']">Get your Request</a></li>
         
 
       </ul>
