@@ -1,6 +1,8 @@
 # Proplistings
 
 Angular 2 Firebase application for listing properties
+
+Log in with 3rd part accounts email verification and password get back
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
