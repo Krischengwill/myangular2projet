@@ -14,3 +14,5 @@ export class DarksoulsComponent implements OnInit {
   }
 
 }
+
+//darksouls details

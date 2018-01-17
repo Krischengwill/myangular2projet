@@ -14,3 +14,5 @@ export class DestinyComponent implements OnInit {
   }
 
 }
+
+//destiny game details 

@@ -13,3 +13,5 @@ export class DeadbydaylightComponent implements OnInit {
   }
 
 }
+
+//game details deadbydaylight

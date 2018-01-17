@@ -2,15 +2,13 @@
 <div class="form-container">
   <h2>Login With Your Accounts</h2>
     <span class="error" *ngIf="error">{{ error }}</span>
-<img src="https://g.foolcdn.com/image/?url=https%3A%2F%2Fg.foolcdn.com%2Fart%2Fcompanylogos%2Fmark%2FFB.png&h=64&w=64&op=resize">
-  <p><button (click)="loginFb()" id="fb">Login With Facebook</button><br></p>
-  <img src="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png"><br>
-  <p><button (click)="loginGoogle()" id="google">Login With Google</button></p>
-  <img src="http://www.iconsdb.com/icons/preview/caribbean-blue/email-xl.png"><br>
-  <button routerLink="/login-email" id="email"><strong>Email</strong></button><br>
- 
+  <p><button class="btn btn-lg btn-primary btn-block" (click)="loginFb()" id="fb">Login With Facebook</button><br></p>
+  
+  <p><button class="btn btn-lg btn-black btn-block"(click)="loginGoogle()" id="google">Login With Google</button><br></p>
+  <p><button class="btn btn-lg btn-black btn-block" routerLink="/login-email" id="email">Email</button></p>
         
   <a routerLink="/signup" routerLinkActive="active" class="alc"><br>No account? <strong>Create one here</strong></a>
   
 </div>
 </div>
+

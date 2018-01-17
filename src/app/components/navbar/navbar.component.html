@@ -15,14 +15,15 @@
         <li *ngIf="(af.auth | async)"><a [routerLink]="['/gamepage']">GamePage</a></li>
        <li *ngIf="(af.auth | async)"><a [routerLink]="['/lfg']">Looking for Group</a></li>
        <li *ngIf="(af.auth | async)"><a [routerLink]="['/alldata']">Get your Request</a></li>
-        
+        <li *ngIf="(af.auth | async)"><a [routerLink]="['/editlfg']">DeleteRequest</a></li>
 
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li *ngIf="(af.auth | async)"><a [routerLink]="['/listings']">Your Profile</a></li>
         <li *ngIf="(af.auth | async)"><a [routerLink]="['/add-listing']">Add Profile</a></li>
         <li *ngIf="!(af.auth | async)"><a (click)="login()"><strong>Google Login</strong></a></li>
-        <li *ngIf="(af.auth | async)"><a (click)="logout()"><strong>Logout</strong></a></li>
+        <li *ngIf="(af.auth | async)"><a [routerLink]="['/']" (click)="logout()"><strong>Logout</strong></a></li>
+        <li *ngIf="(af.auth | async)"><a [routerLink]="['/reset']">ResetPassword</a></li>
         
         <li><a [routerLink]="['/login']">Login</a></li>
       </ul>

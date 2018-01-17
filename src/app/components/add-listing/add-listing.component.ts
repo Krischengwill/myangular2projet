@@ -46,3 +46,5 @@ export class AddListingComponent implements OnInit {
   }
   
 }
+
+//add the user profile

@@ -57,3 +57,5 @@ export class EditListingComponent implements OnInit {
     this.router.navigate(['/listings']);
   }
 }
+
+//edit profile user's list

@@ -14,3 +14,5 @@ export class DiabloComponent implements OnInit {
   }
 
 }
+
+//diable game details

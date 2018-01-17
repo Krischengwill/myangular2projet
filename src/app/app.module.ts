@@ -28,6 +28,8 @@ import { DeadbydaylightComponent } from './components/deadbydaylight/deadbydayli
 import { LFGComponent } from './components/lfg/lfg.component';
 import { HttpService } from './components/service/http.service';
 import { AllDataComponent } from './components/alldata/alldata.component';
+import { EditlfgComponent } from './components/editlfg/editlfg.component';
+import { ResetComponent } from './components/reset/reset.component';
 
 export const firebaseConfig = {
   apiKey: 'AIzaSyALGX_Ef9e85I1Epx1MLIh0Gta35IBxaWA',
@@ -61,7 +63,9 @@ const appRoutes: Routes = [
   { path: 'deadbydaylight', component: DeadbydaylightComponent },
   { path: 'lfg', component: LFGComponent },
   { path: 'alldata', component: AllDataComponent },
-  { path: '', redirectTo: 'lfg', pathMatch: 'full' }
+  { path: '', redirectTo: 'lfg', pathMatch: 'full' },
+  { path: 'editlfg', component: EditlfgComponent },
+  { path: 'reset', component: ResetComponent },
 
 ]
 
@@ -84,7 +88,9 @@ const appRoutes: Routes = [
     DiabloComponent,
     DeadbydaylightComponent,
     LFGComponent,
-    AllDataComponent
+    AllDataComponent,
+    EditlfgComponent,
+    ResetComponent
   ],
   imports: [
     BrowserModule,

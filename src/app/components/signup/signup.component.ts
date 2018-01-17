@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AngularFire, AuthProviders, AuthMethods } from 'angularfire2';
 import { Router } from '@angular/router';
+import {Observable, Subject, ReplaySubject, AsyncSubject} from "rxjs";
 
 @Component({
   selector: 'app-signup',
@@ -33,6 +34,7 @@ export class SignupComponent implements OnInit {
       })
     }
   }
+
   
 
   ngOnInit() {
